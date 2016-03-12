@@ -1,4 +1,5 @@
-qmake
+#!/bin/bash
+qmake -config debug
 make
 ./qmake_gprof
-gprof gmon.out
+gprof qmake_gprof > gprof.txt
