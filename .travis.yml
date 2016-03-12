@@ -1,0 +1,8 @@
+language: cpp
+
+compiler:
+  - gcc
+
+script: 
+ - ./build.sh
+ - cat gprof.txt
